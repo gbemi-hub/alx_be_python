@@ -17,8 +17,10 @@ def main():
            
         elif choice == "2":
             choice =input("Enter the item to remove:")
-            choice= shopping_list.remove(choice)
-
+            if choice not in shopping_list:
+                print(f"{choice} not seen")
+            else:
+                shopping_list.remove(choice)
         elif choice == "3":
                print(shopping_list)
         elif choice == "4":
