@@ -16,15 +16,9 @@ def main():
            
         elif choice == 2:
             choice =input("Enter the item to remove:")
-                        else:
-                print("item cannot be found")
+                       
         elif choice == 3:
-            if shopping_list:
-                print("your shopping list")
-                for i in shopping_list:
-                    print("-",item)
-            else:
-                print("your shopping list is empty")
+               print(shopping_list)
         elif choice == 4:
             print("Goodbye!")
             break
