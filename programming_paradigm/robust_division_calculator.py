@@ -6,7 +6,7 @@ def safe_divide(numerator, denominator){
     expect ZeroDivisionError:
         print("Error: Cannot divide by zero.")
     expect ValueError:
-        print("Error:The value is not valid")
+        print("Error: Please enter numeric values only.")
     else :
         print(f"division result is {result}")
     finally :
