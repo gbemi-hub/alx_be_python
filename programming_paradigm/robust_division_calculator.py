@@ -4,9 +4,9 @@ def safe_divide(numerator, denominator){
     try:
         result = numerator/denominator
     expect ZeroDivisionError:
-        print("you cannot divide by zero")
+        print("Error: Cannot divide by zero.")
     expect ValueError:
-        print("Enter a valid value")
+        print("Error:The value is not valid")
     else :
         print(f"division result is {result}")
     finally :
