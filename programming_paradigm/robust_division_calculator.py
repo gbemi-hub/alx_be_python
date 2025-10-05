@@ -1,6 +1,6 @@
-def safe_divide(x, y){
+def safe_divide(numerator, denominator){
     try:
-        result = x/y
+        result = numerator/denominator
     expect ZeroDivisionError:
         print("you cannot divide by zero")
     expect ValueError:
