@@ -1,7 +1,9 @@
 import unittest
-from simple_calculator.py import SimpleCalculator
+from simple_calculator import SimpleCalculator
 
-class TestMathfunction(unittest.TestCase):
+class TestSimpleCalculator(unittest.TestCase):
+    def Setup(self):
+        self.calc = SimpleCalculator()
     def test_add(self):
        self.assertEqual(add(2,3),5)
 
@@ -17,4 +19,6 @@ class TestMathfunction(unittest.TestCase):
     def test_divide_by_zero(self):
         self.assertRaises(ZeroDivisionError):divide(5,0)
 
-if __name__ == "__main__"
+if __name__ == "__main__":
+    unittest.main
+ 
